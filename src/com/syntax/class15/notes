@@ -1,0 +1,11 @@
+What is a method in java:
+A method is a block of code that contains the logic to solve a specific problem.When we call that method
+all the instructions or logic inside that method is executed.
+We are returning results when we wanna use that input later on.
+That's why return is very useful.
+A method can return something and can print something it depends on the requirements which one to use and write methods
+that return data.
+
+String s="Mohammad Mohammad";
+
+if()

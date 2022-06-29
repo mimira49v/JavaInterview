@@ -1,0 +1,48 @@
+Types of variables:
+There are 3 types of variables lokal, instance and static
+
+Class Vars{
+int age=10; //instance variable (if they have static in front they are static variable)
+static double weight=25.5;  //static variable
+void method(){
+String name="Moreed";       //local variable
+
+}
+
+}
+
+Local variables:
+If a variable is defined inside a method or loop or switch or any other block
+of code it is called a local variable.
+Instance variables:
+If a variable is not declared inside a method, but it is inside a class then
+it is called an instance variable.
+Static variable:
+If a variable is not declared inside a method, but it is inside a class, and
+it has static keyword with it then.
+it is called a static variable.
+
+When to use which type of variable:
+Local variable --> should always be preferred over instance and static variables
+why because they occupy the computers' memory for very, very short amount of time
+as soon as their purpose is served Java destroys them.
+Pros:
+save memory
+cons:
+not accessible outside of methods/block of code
+Instance Variable --> when we want to share something in multiple methods of
+a class and the information is expected to be different from object to object we should
+go with the instance variables.
+Pros:
+accessible in all the methods of a class
+Cons:
+occupy the computers' memory for longer than local variables.
+Static variables:
+when we know the information will stay the same for all the objects of a class we should create
+a static variable for that
+Pros:
+single memory location for all objects of a class
+Cons:
+stay longer in the memory
+can hold only one value at a time.
+

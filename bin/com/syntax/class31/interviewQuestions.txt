@@ -1,0 +1,44 @@
+Java live coding questions:
+// how to find duplicates in the array
+// print the greatest number from the array
+// iterate and print out the array
+// print the odd numbers from the array
+// print the even numbers from the array
+// reveres a String or Fionacci series
+// while loop vs for loop
+CITI INTERVIEW Questions:
+tell me about your project/application?
+tell me about your tools used?
+how was data extracted? excel file?
+how do you rate yourself in oops concepts and java collections?
+Scenario: in our bank we are giving our costumers a 29.9% APR
+	- we are running a promotion for this month only for 19.9%
+	- I dont want that 19.9% to be seen by any other people
+	- what oops concepts would you use to achieve this?
+	- the class which contains the 19.9% - how would we secure it the most?(private, protect?)
+	- if I use Final keyword for the 19.9% would I be able to change it?
+Scenario: I have a dropdown of all 50 states, how would I select the state of Texas without having the Select class?
+	- what collections would you use?
+	- what are the commands to the driver to get all the elements of the dropdown?
+Scenario: Using Java Collections - I have a dynamic table with 2 columns - Costumer name and phone number. Out of 500 people in the table there are 50 costumers who didnt provide a phone number. Which Java collections would you use to find those costumers that didnt provide a phone number?
+Have you used TestNG?
+BDD Scenario: Given I am a costumer, I login to see my bank account, I am able to see my bank accounts, now after some time I missed one I need to check my balance as well. How would you make sure your test script snippets are generated? I dont want you to run it, I want to make sure all the steps are not missing
+Scenario: I have 10 test cases I want them to run on a particular order, which cucumber hooks would help you acheive this?
+Scenario: there are 2 or more submit buttons on every page, how would you automate this? what script would you use?
+	- use index of the individual submit button
+Have you faced a NullPointerException?
+How do you convert an array into an arrayList?
+I see, you use Postman in your Project - What did you use for automation for API on your project?
+
+Let's create a game where we roll a die, and move a player around a game board.
+The board has 40 spaces, arranged in a circle
+
+The player starts at position 0.  Loop 30 times.  Each time through the loop, do this:
+- roll the die (each die has a random value, 1-6)
+- print player start position, die value, and ending position
+
+sample output:
+
+start=0, roll=3, end=3
+start=3, roll=2, end=5
+start=38, roll=6, end=4

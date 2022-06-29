@@ -1,0 +1,16 @@
+public static void main(String[]args){
+    ArrayList<String> cars = new ArrayList<>();
+    cars.add("Bmw");
+    cars.add("Audi");
+    cars.add("Suzuki");
+
+    for(String car:cars){
+        System.out.println(car);
+    }
+
+    int i = 0;
+    while(i<cars.size()){
+        System.out.println(cars.get(i));
+        i++;
+    }
+}

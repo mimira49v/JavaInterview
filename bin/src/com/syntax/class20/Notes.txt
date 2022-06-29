@@ -1,0 +1,25 @@
+Constructors in java:
+Same as method but named as class, not allowed any return type.
+Constructors in java are special blocks of code similar to methods that initialize
+object of the class.
+Rules:
+ 1) no return types not even void.
+ 2) name of the constructor must be same as name of the class.
+ 3) constructors can't have non access modifiers like static final etc.
+ 4) we can use the access modifiers like public private protected with constructors.
+ 5) if we don't write a constructor in a class default constructor is provided by compiler.
+ Main responsibility of compiler is to reverse code to binary code and checks your code.
+ 6) we can have multiple constructors in a class but their number of arguments sequence of  argument or
+ type of arguments should be different.
+ 7) if we have multiple constructors then Java decide which constructor to call based on the parameters we pass.
+This keyword:
+it is a reserved keyword in java that we can use to refer to instance variables methods or
+constructor of a class
+1) "this" keyword is used to distinguish instance variables with local variables.
+2) we can use "this" keyword to call the constructor of a class inside another constructor.
+3) we can use the "this" keyword to call the methods of a class.
+Rules about this keyword:
+1) this() should be the first line inside a constructor.
+1) this() can't be used inside methods.
+=============================================================================================================
+

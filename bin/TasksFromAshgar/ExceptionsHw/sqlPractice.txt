@@ -1,0 +1,62 @@
+#How can you display all the data in Dependents table?
+select * from hs_hr_emp_dependents;
+
+#How can you display employee last name from Employees table?
+select lastname from person;
+
+#How can you display all job titles from from Job Title table?
+select job_title from ohrm_job_title;
+
+#How can you display employee id, first name, last name from Employees?
+select empID, firstname, lastname from person;
+
+#Please display all information from Language Table?
+select * from ohrm_language;
+
+#How can we display first name and last name of employee id 8335?
+select * from hs_hr_employees where emp_number=8335;
+
+#How can you display unique relationship of employees from emergency contact table.
+select distinct eec_relationship from hs_hr_emp_emergency_contacts;
+
+#How to display ex employer and ex job title for employee 9451?
+select eexp_employer,eexp_jobtit from employee where empID=9451;
+
+#How to display all the information of employee who was born after January 1 of 1980?
+select * from person where dob>'1980-01-01';
+
+#How to display information about employees who do not have assign job titles?
+select * from hs_hr_employees where job_title_code is not null;
+
+#How to find employees first name, last name that do not have home phone number and display first names in alphabetical order.
+select emp_firstname,emp_lastname from hs_hr_employees where emp_hm_telephone is null order by emp_firstname;
+
+#How to display about all employees whose DOB has been entered. We want to see employees sorted by last name from Z-A?
+select * from hs_hr_employees where emp_birthday is not null order by emp_lastname desc;
+
+#Display all employees whose last name ends with 'a'.
+select * from hs_hr_employees where emp_lastname like '%a';
+
+#Display all HRMS offices except those located in US, Canada and Brazil.
+select * from ohrm_location;
+select * from ohrm_location where country_code not in ('US','BR','CA');
+
+#Verify all employees who were born from January 1st of 1980 until December 31st of 2000.
+select * from hs_hr_employees where emp_birthday>='1980-01-01' and emp_birthday<='2000-12-31';
+
+#Display all nationalities that start with 'C'?
+select * from ohrm_nationality where name like 'a%';
+
+#Display all employees' whose birthday is in August and do not forget to sort employee's last name from A-Z.
+select * from hs_hr_employees where emp_birthday like '____-08-__' order by emp_lastname;
+
+#Verify all the employees who are managers.
+select emp_firstname,emp_lastname,job_title_code from hs_hr_employees where job_title_code is not null;
+select * from ohrm_job_title where is_deleted=0;
+select id, job_title from ohrm_job_title where is_deleted=0 and job_title like '%manager%';
+select * from  hs_hr_employees where job_title_code in (3,7,155,245,295);
+
+#How to display first name, last name, dob of employees who is a Freelancer or developer.
+select id, job_title from ohrm_job_title where is_deleted=0 and job_title like '%freelance%' or job_title like '%develop%';
+select * from  hs_hr_employees where job_title_code in (9,10,31,33,52,53,172,175,257);
+select emp_firstname,emp_lastname,job_title_code from hs_hr_employees where job_title_code is not null order by job_title_code;

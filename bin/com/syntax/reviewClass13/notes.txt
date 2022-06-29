@@ -1,0 +1,42 @@
+Lists should be used when we have to store single elements as a collection.
+    1) They maintain the insertion order.
+    2) they allow us to store duplicate elements
+Two famous classes that implement the list interface are
+    1) Array list
+    2) linked list
+Arraylist
+    1) When most of the operations(70%-90%) are storing new data at the end of the list
+    and reading data no manipulation(adding or removing the) of data
+LinkedList
+    when most of the operations are storing new data in between or at the start of the list
+    then we should go with the linkedList.
+In real life 90% of times ArrayList is used.
+Sets
+    Sets also store single values, but they don't allow duplicates
+    1) Hashset 2) LinkedHashSet 3) TreeSet
+Hashset(Used 90% of the time)
+    1) No insertion order is maintained
+    2) fastest when it comes to insertion and retrieval speed
+LinkedHashSet
+    Maintains the insertion order
+    insertion is slower than Hashset but faster than Treeset
+    retrieval is slowest
+Treeset
+    Maintains the data in natural order
+    insertion is slowest
+    faster than the linkedList but slower than the LinkedHashSet
+Map
+    1) Map is data structure that can store the data in the form of key value pairs.
+    We can use any real life info as key for example ssn number, phone number
+    2) Searching in maps is super super fast.
+1) HashMap 2) LinkedHashMap 3) TreeMap 4) HashTable
+HashMap
+    The Fastest, most widely used but does not maintain the insertion order
+LinkedHashMap
+    1) maintains insertion order
+    2) slower than HashMap but faster than TreeMap
+    3) slowest of all four
+TreeMap
+    1) Data is stored in sorted form
+    2) insertion speed is the slowest
+    3) retrieval speed better than linkedHashMap but slower than HashMap.

@@ -1,0 +1,35 @@
+Benefits:
+    1) Flexibility, with the help of method overriding child classes can provide its own methods
+    that are present in the parent class.
+    Polymorphism: same method can behave differently depending upon the object we call it.
+Rules:
+    1) There must be parent child relationship between the classes.
+    2) The method that we are trying to override must be present inside the child class with same name
+    and parameters.
+    3) If something don't participate in inheritance we can't override it for example
+    private methods and fields and constructors
+    4) If a method is declared final inside the parent class we can't override that method inside
+    the child class
+    5) we can't override the static methods but, we can redeclare them. for example the main method.
+    6) we can't change the access modifier to be more restrictive
+    7) method return type should be same
+
+Method Overloading
+Method signature should be different
+Return type can be different
+we don't care about the access modifiers
+we don't care about the non access modifiers(final static abstract)
+we can overload constructors
+we achieve compile time polymorphism or early binding or static polymorphism
+========================== vs ================================
+Method overriding:
+Method signature should be same
+Return type should be same
+Access modifiers can't be more restrictive
+We do care about access modifiers
+we can't override constructors
+run time polymorphism or dynamic polymorphism
+
+Polymorphism:
+Polymorphism happens when an object behaves differently for example a method can behave
+differently when we pass different parameters or when we call the method using different objects.

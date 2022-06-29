@@ -1,0 +1,43 @@
+Encapsulation in Java:
+    Encapsulation is hiding the class variables by making them private and providing
+    getter setter methods.
+Benefits:
+    Better control over the data and security.
+Collections Framework:
+Collections framework is a collection of interfaces and classes which have many
+methods to store and manipulate the data.
+String name;
+String name1;
+String name2;
+String [] names = new String [10];
+Limitations of the array
+    1) Arrays are fixed in size once we have created an array we can't modify it's size
+    2) Arrays don't have built in methods.
+Collections
+    1) Dynamic.
+    2) They have built in methods to manipulate the data
+    3) Collections framework does not work with the primitive data types.
+        we have to use the wrapper classes.
+    4) When we convert the primitive data type to non-primitive we call it boxing
+INTERVIEW QUESTIONS
+Boxing:
+    int num=10;
+    Integer wrapper=new Integer(num); // boxing - longer way
+AutoBoxing:
+    Integer wrapper=num;
+
+Double d=new Double(25.5);
+double num4=d.doubleValue(); //un-boxing
+double num5=d; // auto un-boxing
+
+
+
+ArrayList and LinkedList adjust dynamically, so they don't waste space!!!!!
+
+What is equals method why we need to override it? Interview Question
+to tell java how to check if two objects are equal
+
+In java, we are always inheriting in more than one class
+================================================================================
+In java when we make a class inherit from another class we are already doing multiple
+inheritance because Object class is automatically inherited for all the classes.
