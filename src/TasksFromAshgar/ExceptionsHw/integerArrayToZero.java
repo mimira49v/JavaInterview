@@ -1,9 +1,7 @@
 package TasksFromAshgar.ExceptionsHw;
 
 public class integerArrayToZero {
-
     //  integer array sum to zero sout 0 okey and exit code 0 okey as output
-
         public static void main(String[] args) {
             arraySumToZero(34);
         }

@@ -7,8 +7,7 @@ public class countDuplicates {
     public static void main(String[] args) {
 
     }
-
-    public static int countDuplicates(List<Integer> numbers) {
+    public static int counDupl(List<Integer> numbers) {
         int[] numbersArr = new int[]{7, 2, 6, 1, 4, 7, 4, 5, 4, 7, 7, 3, 1};
         int numDup = 0, dupCount = 0;
         int previous = -1;
