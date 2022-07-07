@@ -18,7 +18,7 @@ public class reverseAstring {
         }
         System.out.println("Reversed String is: "+reversed);
 
-        // Reverse  a string word by word
+        // Reverse a string word by word
 
         String str = "Today is Sunday";
         String reversed2 = " ";

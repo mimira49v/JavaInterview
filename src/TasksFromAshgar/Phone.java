@@ -49,9 +49,5 @@ public class Phone {
 		samsung.noOfCams=4;
 		samsung.color="black";
 		iphone.printCompleteInfo();
-		
-		
-		
 	}
-
 }

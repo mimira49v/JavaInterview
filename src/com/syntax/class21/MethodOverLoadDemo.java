@@ -17,6 +17,5 @@ public class MethodOverLoadDemo {
     public static void main(String[] args) {
         add(10.0,10.0);
         add("10","15");
-
     }
 }

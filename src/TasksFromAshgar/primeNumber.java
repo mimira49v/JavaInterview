@@ -1,9 +1,9 @@
 package TasksFromAshgar;
 
 public class primeNumber {
-    // Write a java program to check wheater a given number is prime or not?
+    //Write a java program to check wheater a given number is prime or not?
     public static void main(String[] args) {
-        int given = 13;
+        int given = 4;
         boolean isPrime=true;
 
         if(given>1){
@@ -16,6 +16,6 @@ public class primeNumber {
         }else {
             isPrime=false;
         }
-        System.out.println("Given number : "+given+" | is prime? "+isPrime);
+        System.out.println(given+" is prime? "+isPrime);
     }
 }
