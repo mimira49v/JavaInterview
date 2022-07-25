@@ -1,11 +1,16 @@
-public class countUniqueStrings {
 
+public class Fibonacci {
+    static void Fibonacci(int N) {
+        int num1 = 0; num2 = 1; int counter = 0;
+        while(counter < N){
+            System.out.print(num1+" ");
+            int num3 = num2 + num1;
+            num1 = num2;
+            num2 = num3;
+            counter = counter + 1;
 
+            }
+        }
 
-}
-public static void main(String[] args) {
-        String text;
-        text = "In agile methodology, features of the software are delivered frequently, so that the\n" +
-                "testing activity is done simultaneously with the development activity. Testing time is\n" +
-                "shortened as only small features need to be tested at once.";
+    }
 }

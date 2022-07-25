@@ -48,7 +48,7 @@ select * from hs_hr_employees where emp_birthday>='1980-01-01' and emp_birthday<
 select * from ohrm_nationality where name like 'a%';
 
 #Display all employees' whose birthday is in August and do not forget to sort employee's last name from A-Z.
-select * from hs_hr_employees where emp_birthday like '____-08-__' order by emp_lastname;
+select * from hs_hr_employees where emp_birthday like '__-08-____' order by emp_lastname;
 
 #Verify all the employees who are managers.
 select emp_firstname,emp_lastname,job_title_code from hs_hr_employees where job_title_code is not null;

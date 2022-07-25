@@ -9,8 +9,8 @@ Disadvantages:
 Types of inheritance:
 There are 4 types of inheritance but java only supports 3 of them:
     1) single
-    2)Hierarchical
-    3)Multilevel(not supported in java)
+    2) Hierarchical
+    3) Multilevel(not supported in java)
 Single inheritance:
     in single inheritance we have only one child and one parent class.Or only two classes
     participate in inheritance one as child one as parent.

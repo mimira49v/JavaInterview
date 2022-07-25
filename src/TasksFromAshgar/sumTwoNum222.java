@@ -1,10 +1,9 @@
 package TasksFromAshgar;
 
-
 import java.util.ArrayList;
 import java.util.List;
 
-class testing {
+public class sumTwoNum222 {
         public static void main(String[] args) {
             List<Integer> arr = new ArrayList<>();
             arr.add(5);

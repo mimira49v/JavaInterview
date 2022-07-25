@@ -1,7 +1,5 @@
 package TasksFromAshgar;
 
-import java.io.*;
-
 public class LargestNumber {
 
 // Java program to count the uppercase,
