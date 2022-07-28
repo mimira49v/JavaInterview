@@ -9,7 +9,6 @@ public class reverseAstring {
         // without using reverse function:
 
         String toReverse = "Hello World";
-
         //1 way using charAt();
 
         String reversed = " ";

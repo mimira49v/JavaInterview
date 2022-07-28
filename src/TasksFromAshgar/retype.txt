@@ -1,16 +1,30 @@
 
+
 public class Fibonacci {
-    static void Fibonacci(int N) {
-        int num1 = 0; num2 = 1; int counter = 0;
-        while(counter < N){
-            System.out.print(num1+" ");
-            int num3 = num2 + num1;
-            num1 = num2;
-            num2 = num3;
-            counter = counter + 1;
 
-            }
+    private static long fibCache;
+
+    public static void main (String[] args){
+
+        int n = 6;
+
+        fibCache = new long [n + 1];
+
+        for(int i = 0; i <= n; i++) {
+            System.out.print(fibonacci(i)+" ");
         }
+    }
 
+    private static long fibonacci(int n){
+        if(n <= 1){
+            return n;
+        }
+        if(fibCache[n] != 0) {
+            return fibCache[n];
+        }
+        long nthFibNum = (fibonacci (n - 1) + fibonacci (n - 2));
+        fibCache[n] = nthFibNum;
+        return nthFibNum;
+        }
     }
 }

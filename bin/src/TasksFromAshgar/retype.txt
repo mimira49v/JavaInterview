@@ -1,16 +1,40 @@
 
-public class Fibonacci {
-    static void Fibonacci(int N) {
-        int num1 = 0; num2 = 1; int counter = 0;
-        while(counter < N){
-            System.out.print(num1+" ");
-            int num3 = num2 + num1;
-            num1 = num2;
-            num2 = num3;
-            counter = counter + 1;
 
-            }
+public static void main(String[] args){
+    System.setProperty("webdriver.chrome.driver", "drivers/chromedriver.exe");
+    WebDriver driver = new ChromeDriver();
+    driver.get("http:secure");
+    String actualTitle = driver.getTitle();
+    System.out.println(actualTitle);
+    String expectedTitle = "Web Orders Login";
+    System.out.println(expectedTitle);
+
+    if(actualTitle.equalIgnoreCase(expectedTitle))
+        System.out.println("Title Matched!!");
+    else
+        System.out.println("Title didn't match!!;
+
+    WebElement username = driver.findElement(By.id("ctl100_MainContent_username"));
+    username.sendKeys("Tester");
+    WebElement password = driver.findElement(By.id("ctl00_MainContent_password"));
+    password.sendKeys("test");
+    WebElement loginButton = driver.findElement(By.className("button"));
+    loginButton.click();
+    driver.quit();
+}
+
+public static String X(String strToRev){
+        String reversed2 = "";
+        String[] array = strToRev.split(" ");
+        for(int i = array.length-1; i>=0; i--){
+            reversed2 = reversed2+array[i]+" ";
         }
-
-    }
+        return reversed2;
+}
+public static String X(String strToRev){
+        String reversed2 = "";
+        String[] array = strToRev.split(" ");
+        for(int i = array.length-1; i>=0; i--){
+            reversed2 = reversed2+array[i]+" ";
+        }
 }
