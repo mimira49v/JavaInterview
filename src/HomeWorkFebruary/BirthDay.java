@@ -10,8 +10,7 @@ public class BirthDay {
 		String month = scan.next();
 		
 		
-		if (month.equals("May") || month.equals("April") || month.equals("March"))
-			 {
+		if (month.equals("May") || month.equals("April") || month.equals("March")) {
 					System.out.println("Spring");
 				}
 		else if(month.equals("April") || month.equals("July")||month.equals("August")) {

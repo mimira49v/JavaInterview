@@ -8,10 +8,12 @@ public class Task1Tester {
         SyntaxStudent syntaxStudent=new SyntaxStudent();
         Student schoolStudent=new SchoolStudent();
 
-        /*int[] arr={1,2,3};
-        for (int number:arr
-        ) {
+        /*
+
+        int[] arr={1,2,3};
+        for (int number:arr) {
             System.out.println(number);
+
         */
 
         Student[] students={new SyntaxStudent(),

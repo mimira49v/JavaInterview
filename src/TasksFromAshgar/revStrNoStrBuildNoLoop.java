@@ -4,8 +4,7 @@ public class revStrNoStrBuildNoLoop {
         public static String c(String n, int length) {
             if(length == 1) {
                 return String.valueOf(n.charAt(length-1));
-            }
-            else {
+            } else {
                 return String.valueOf(n.charAt(length-1)) + c(n,length-1);
             }
         }
