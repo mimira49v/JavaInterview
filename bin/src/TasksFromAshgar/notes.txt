@@ -1,16 +1,23 @@
 
+public static int unique(int[] x){
+Set<Integer>uniqueNumber=new HashSet<>();
+Set<Integer>repeatedNumbers=new HashSet<>();
 
-int given = 3;
-boolean isPrime = true;
-
-    if(given > 1) {
-        for(int i; i < given; i++){
-            if(given % i == 0){
-                isPrime = false;
-                break;
-            }
-        }
-    }else {
-        isPrime = false;
+for(int e:x){
+    if(reapeatedNumbers.contains(e)){
+        continue;
     }
-    System.out.println(given + " is prime? " + isPrime);
+    if(uniqueNumber.contains(e)){
+        uniqueNumber.remove(e);
+        repeatedNumbers.add(e);
+    }else{
+        uniqueNumber.add(e);
+    }
+    for(int e:x)}{
+        if(uniqueNumber.contains(e)){
+        return e;
+        }
+    }
+    return 0;
+}
+}

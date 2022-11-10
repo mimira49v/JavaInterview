@@ -12,6 +12,7 @@ System.out.println(java.util.Arrays.toString(arr));
  */
 
         int [] arr = {5,2,4,5,6};
+
         System.out.println(Arrays.toString(runningSum(arr)));
     }
     public static int[] runningSum(int[] nums) {

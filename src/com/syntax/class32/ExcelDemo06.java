@@ -17,9 +17,9 @@ public class ExcelDemo06 {
         FileInputStream fileInputStream = new FileInputStream(path);
         XSSFWorkbook xssfWorkbook = new XSSFWorkbook(fileInputStream);
         Sheet sheet = xssfWorkbook.getSheet("Sheet1");
-        // A list of maps to store the data from excell each map will store the data from each row
+        // A list of maps to store the data from excel each map will store the data from each row
         List<Map<String, String>> excelData = new ArrayList<>();
-        // getting the header form the excell file so that we can use the data from this header row as keys
+        // getting the header form the excel file so that we can use the data from this header row as keys
         // for the maps like first name last name etc
         Row headerRow = sheet.getRow(0);
         // we write a loop to get all the rows from this sheet except the first row because it contains the

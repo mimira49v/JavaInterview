@@ -31,11 +31,6 @@ import java.util.Scanner;
 				}
 				}
 				System.out.println("Sum of Array "+sum);
-				
-				
-				
-				
 			}
-
 	}
 
