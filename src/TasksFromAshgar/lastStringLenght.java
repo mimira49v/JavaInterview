@@ -4,7 +4,7 @@ public class lastStringLenght {
         int length_word = 0;
         String[] words = str1.split(" "); // needs space in regex!!!
         if(words.length>0) {
-            length_word = words[words.length-1].length();
+            length_word = words.length-1;
         } else {
             length_word = 0;
         }
@@ -12,8 +12,9 @@ public class lastStringLenght {
     }
 
         public static void main(String[] args) {
+            String s = "";
             String str1 = "The length of last word";
-            System.out.println("Original String: "+str1);
-            System.out.println("Length of the last word of the above string: "+length_Of_last_word(str1));
-        }
+            System.out.println(str1 + ":  " + length_Of_last_word(str1));
+            System.out.println(length_Of_last_word(s));
     }
+}

@@ -26,6 +26,8 @@ public class reverseAstring {
             reversed2 = reversed2+array[i]+" ";
         }
         System.out.println("Reverse by word : "+reversed2);
+
+        System.out.println(X(a));
     }
 
     // Method to reverse a string

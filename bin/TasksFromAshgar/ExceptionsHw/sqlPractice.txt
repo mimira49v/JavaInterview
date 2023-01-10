@@ -4,7 +4,7 @@ select * from hs_hr_emp_dependents;
 #How can you display employee last name from Employees table?
 select lastname from person;
 
-#How can you display all job titles from from Job Title table?
+#How can you display all job titles from Job Title table?
 select job_title from ohrm_job_title;
 
 #How can you display employee id, first name, last name from Employees?

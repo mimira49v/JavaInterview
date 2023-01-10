@@ -1,33 +1,26 @@
 package TasksFromAshgar;
 
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.Map;
+import java.util.TreeMap;
 
 class testing {
-        public static void main(String[] args) {
-            List<Integer> arr = new ArrayList<>();
-            arr.add(5);
-            arr.add(3);
-            arr.add(8);
-            arr.add(9);
-            arr.add(10);
-            arr.add(11);
-            arr.add(5);
-            System.out.println(findMaxSum(arr));
-        }
 
-        public static int findMaxSum(List<Integer> list) {
-            int max1 = Integer.MIN_VALUE;
-            int max2 = Integer.MIN_VALUE;
-            for (int number : list) {
-                if (number > max1) {
-                    max2 = max1;
-                    max1 = number;
-                } else if (number > max2) {
-                    max2 = number;
-                }
+    static void count(String str){
+        Map<String, Integer> mp = new TreeMap<>();
+        String arr[] = str.split(" ");
+        for(int i = 0; i < arr.length; i++) {
+            if (mp.containsKey(arr[i])) {
+                mp.put(arr[i], mp.get(arr[i]) + 1);
+            } else {
+                mp.put(arr[i], 1);
             }
-            return max2+max1;
+        }
+        for(Map.Entry<String, Integer> entry : mp.entrySet()){
+            System.out.println(entry.getKey() + " - " + entry.getValue());
         }
     }
+
+    public static void main(String[] args) {
+    }
+}
